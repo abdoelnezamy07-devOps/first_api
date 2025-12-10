@@ -1,0 +1,10 @@
+<<<<<<< HEAD
+fastapi==0.117.1
+uvicorn==0.37.0
+pydantic==2.11.9
+=======
+fastapi==0.117.1
+uvicorn==0.37.0
+pydantic==2.11.9
+>>>>>>> origin/scripts
+PyYAML==6.0.3

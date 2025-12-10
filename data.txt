@@ -1,0 +1,8 @@
+ {
+    "name": "A-Class-List-3",
+    "country": "Germany",
+    "brand": "Mercedes",
+    "model": "A180-2027",
+    "year": 2027
+ }
+

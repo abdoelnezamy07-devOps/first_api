@@ -1,0 +1,17 @@
+{
+  "id": "d7cd2a73-34db-49ef-b663-41a6053515ee",
+  "name": "bin",
+  "projectId": "5f5c8255-5662-49b2-a097-84f52fd16c12",
+  "ports": [
+    {
+      "expose": true,
+      "number": 80
+    }
+  ],
+  "publicAccess": {
+    "enabled": true,
+    "domain": "auto"
+  },
+  "resourceTier": "t1",
+  "dockerFileName": "Dockerfile"
+}

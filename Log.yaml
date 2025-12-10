@@ -1,0 +1,29 @@
+version: 1
+disable_existing_loggers: False
+
+formatters:
+  uvicorn_custom_fmt:
+    format: '%(asctime)s [%(levelname)s]: %(message)s'
+    datefmt: '%Y-%m-%d %H:%M:%S'
+
+handlers:
+    File:
+      formatter: uvicorn_custom_fmt
+      class: logging.handlers.RotatingFileHandler
+      filename: 'AP.log'
+      encoding: utf8
+    default:
+     formatter: uvicorn_custom_fmt
+     class: logging.StreamHandler
+     stream: ext://sys.stderr
+
+loggers:
+  uvicorn.access:
+    handlers: [ default , File ]
+    level: INFO
+    propagate: False
+  uvicorn:
+    handlers: [ default ,  File ]
+    level: INFO
+    propagate: False
+
